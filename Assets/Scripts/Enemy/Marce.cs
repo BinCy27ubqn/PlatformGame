@@ -17,7 +17,7 @@ public class Marce : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.up * speed*direction);
-        if(transform.position.y - startPoint > distance || transform.position.y == startPoint)
+        if(transform.position.y - startPoint > distance || transform.position.y < startPoint)
         {
             direction = direction * -1;
         }

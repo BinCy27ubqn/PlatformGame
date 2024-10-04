@@ -38,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if(xHorizontal > 0)
         {
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
+            gameObject.transform.localScale = new Vector3(0.65f, 0.65f, 0.7f);
             anim.SetBool("IsRun", true);
         }
         if(xHorizontal < 0)
         {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+            gameObject.transform.localScale = new Vector3(-0.65f, 0.65f, 0.7f);
             anim.SetBool("IsRun", true);
         }
 

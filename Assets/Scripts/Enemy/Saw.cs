@@ -12,6 +12,7 @@ public class Saw : MonoBehaviour
     bool isGroundCheck;
     public Transform pointRay;
     public float distanceRayCheck;
+    public LayerMask layer;
 
     int direction = 1;
     Vector2 rayDirection = new Vector3(1, -1);
@@ -20,7 +21,7 @@ public class Saw : MonoBehaviour
     {
         transform.Rotate(Vector3.forward * rotationSpeed);
         
-        isGroundCheck = Physics2D.Raycast(pointRay.position, rayDirection, distanceRayCheck);
+        isGroundCheck = Physics2D.Raycast(pointRay.position, rayDirection, distanceRayCheck,layer);
         if (isGroundCheck)
         {
             sawCheck.Translate(Vector2.right * speed* direction);
