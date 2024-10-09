@@ -29,13 +29,8 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public void IsReloadLevel()
+    public void IsReloadLevel(int level)
     {
-        SceneManager.LoadScene("Level1");
-    }
-
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(level);
     }
 }

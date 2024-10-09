@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody2D: {fileID: 2085621232007374467}
-  speed: 4
+  speed: 3
   xHorizontal: 0
   anim: {fileID: 2085621232007374468}
   jumpForce: 4.5
